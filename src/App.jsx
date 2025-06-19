@@ -1,34 +1,47 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import './Index.css'
+import { AnimatedSection } from "./component/animatedSections"
+import fotoCristina from "./assets/foto-cristina.jpeg"
+import './App.css'
 
 export default function Portfolio() {
   return (
     <div className="bg-white text-gray-800 font-sans">
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-orange-50 to-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4">Hola, soy Cristina</h1>
-        <p className="text-lg md:text-xl max-w-xl mb-6">
-          Desarrollo sitios web bonitos y útiles para pequeños negocios en Milán, especialmente para la comunidad latina.
-        </p>
+      <AnimatedSection className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-orange-50 to-white">
+        <div className="flex">
+          <div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Hola, soy Cristina</h1>
+            <p className="text-lg md:text-xl max-w-xl mb-6">
+              Desarrollo sitios web bonitos y útiles para pequeños negocios en Milán, especialmente para la comunidad latina.
+            </p>
+          </div>
+          <div>
+            <img
+              src={fotoCristina}
+              alt="Cristina"
+              className="rounded-full mb-6 w-32 h-32 md:w-48 md:h-48 shadow-lg"
+            />
+          </div>
+        </div>
         <a
           href="#proyectos"
           className="bg-orange-500 text-white px-6 py-3 rounded-xl shadow hover:bg-orange-600 transition"
         >
           Ver mis trabajos
         </a>
-      </section>
+      </AnimatedSection>
 
       {/* Sobre Mí */}
-      <section className="py-16 px-6 max-w-4xl mx-auto" id="sobre-mi">
+      <AnimatedSection className="py-16 px-6 max-w-4xl mx-auto" id="sobre-mi">
         <h2 className="text-3xl font-semibold mb-4">Sobre mí</h2>
         <p className="text-lg">
           Soy desarrolladora web independiente viviendo en Milán. Me encanta ayudar a pequeños negocios a tener presencia en línea con páginas modernas, claras y pensadas para su público. Trabajo de manera cercana, en español, y me enfoco en que todo sea simple y útil para vos.
         </p>
-      </section>
+      </AnimatedSection>
 
       {/* Servicios */}
-      <section className="bg-orange-50 py-16 px-6" id="servicios">
+      <AnimatedSection className="bg-orange-50 py-16 px-6" id="servicios">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-semibold mb-8">Servicios</h2>
           <div className="grid gap-6 md:grid-cols-2">
@@ -38,10 +51,10 @@ export default function Portfolio() {
             <ServiceCard title="Soporte personalizado" desc="Acompañamiento directo y en español" />
           </div>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Proyectos */}
-      <section className="py-16 px-6 max-w-5xl mx-auto" id="proyectos">
+      <AnimatedSection className="py-16 px-6 max-w-5xl mx-auto" id="proyectos">
         <h2 className="text-3xl font-semibold mb-8">Proyectos</h2>
         <div className="grid gap-8 md:grid-cols-2">
           <ProjectCard
@@ -55,10 +68,10 @@ export default function Portfolio() {
             link="#"
           />
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Contacto */}
-      <section className="bg-gray-100 py-16 px-6" id="contacto">
+      <AnimatedSection className="bg-gray-100 py-16 px-6" id="contacto">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-4">¿Hablamos?</h2>
           <p className="mb-6">
@@ -71,7 +84,7 @@ export default function Portfolio() {
             Escribime por correo
           </a>
         </div>
-      </section>
+      </AnimatedSection>
 
       {/* Footer */}
       <footer className="text-center text-sm text-gray-500 py-8">
@@ -104,5 +117,4 @@ function ProjectCard({ title, description, link }) {
     </motion.a>
   );
 }
-
 
