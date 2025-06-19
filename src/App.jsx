@@ -1,28 +1,32 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { AnimatedSection } from "./component/animatedSections"
-import fotoCristina from "./assets/foto-cristina.jpeg"
+import heroFotoCristina from "./assets/hero-foto-cristina.png"
 import './App.css'
 
 export default function Portfolio() {
   return (
     <div className="bg-white text-gray-800 font-sans">
+
       {/* Hero Section */}
       <AnimatedSection className="min-h-screen flex flex-col justify-center items-center text-center px-4 bg-gradient-to-b from-orange-50 to-white">
-        <div className="flex">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">Hola, soy Cristina</h1>
+
+        <div className="flex flex-col md:flex-row items-center gap-10 mt-6">
+          <div className="w-full md:w-1/2 mt-12 text-left">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">Frontend<br></br>Developer</h1>
             <p className="text-lg md:text-xl max-w-xl mb-6">
-              Desarrollo sitios web bonitos y útiles para pequeños negocios en Milán, especialmente para la comunidad latina.
+              Hola, soy Cristina!. Desarrollo sitios web bonitos y útiles para pequeños negocios en Milán, especialmente para la comunidad latina.
             </p>
           </div>
-          <div>
+
+          <div className="w-full md:w-1/2 flex ">
             <img
-              src={fotoCristina}
+              src={heroFotoCristina}
               alt="Cristina"
-              className="rounded-full mb-6 w-32 h-32 md:w-48 md:h-48 shadow-lg"
+              className="w-[70%] md:w-[60%] h-auto shadow-lg"
             />
           </div>
+
         </div>
         <a
           href="#proyectos"
@@ -31,6 +35,10 @@ export default function Portfolio() {
           Ver mis trabajos
         </a>
       </AnimatedSection>
+
+
+
+
 
       {/* Sobre Mí */}
       <AnimatedSection className="py-16 px-6 max-w-4xl mx-auto" id="sobre-mi">
