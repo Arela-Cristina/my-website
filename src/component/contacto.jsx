@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Contacto() {
     return (
-        <AnimatedSection className="min-h-screen w-screen flex flex-col items-center justify-center bg-gray-50 px-6 py-20">
+        <AnimatedSection className="w-full min-h-screen flex flex-col items-center justify-center bg-gray-50 px-6 py-20">
             <div className="text-center mb-12">
                 <h1 className="text-4xl md:text-5xl font-bold text-purple-600 mb-4">
                     ¡Envíame un mensaje!

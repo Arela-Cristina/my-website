@@ -4,7 +4,7 @@ import myExperienceImg from '../assets/Servicios-img.png'
 export default function MiExperiencia() {
     return (
         <AnimatedSection
-            className="w-screen h-screen flex"
+            className="w-full min-h-screen flex"
             style={{ backgroundColor: '#851851' }}
         >
             <section className='flex  justify-between items-center mr-70 ml-70 gap-[5rem] '>

@@ -26,7 +26,7 @@ export default function Proyectos() {
     return (
         <AnimatedSection
             id="proyectos"
-            className="w-screen h-screen  py-16  mx-auto"
+            className="w-full min-h-screen  py-16  mx-auto"
             style={{ backgroundColor: '#851851' }}
         >
 

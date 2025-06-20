@@ -3,7 +3,7 @@ import { AnimatedSection } from "./animatedSections";
 export default function SobreMi() {
     return (
         <AnimatedSection
-            className="w-screen h-screen flex flex-col justify-center items-center gap-[5rem] px-20 py-16"
+            className="w-full min-h-screen flex flex-col justify-center items-center gap-[5rem] px-20 py-16"
         >
             <div className="flex justify-between w-full gap-[5rem]">
                 <div className="w-2/5 bg-pink-500">
