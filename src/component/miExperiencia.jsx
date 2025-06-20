@@ -5,7 +5,7 @@ export default function MiExperiencia() {
     return (
         <AnimatedSection
             className="w-screen h-screen flex"
-            style={{ backgroundColor: '#fe3f87' }}
+            style={{ backgroundColor: '#851851' }}
         >
             <section className='flex  justify-between items-center mr-70 ml-70 gap-[5rem] '>
                 <div className="w-2/5">
