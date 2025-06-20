@@ -5,6 +5,7 @@ import Servicios from './component/servicios'
 import Proyectos from './component/proyectos'
 import Contacto from './component/contacto'
 import Footer from './component/footer'
+import MiExperiencia from './component/miExperiencia'
 
 
 export default function Portfolio() {
@@ -12,6 +13,7 @@ export default function Portfolio() {
     <main>
       <Hero />
       <SobreMi />
+      <MiExperiencia />
       <Servicios />
       <Proyectos />
       <Contacto />
