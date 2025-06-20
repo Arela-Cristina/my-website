@@ -1,4 +1,4 @@
-import { AnimatedSection } from "./component/animatedSections"
+import { AnimatedSection } from "./animatedSections"
 
 export default function Footer() {
     return (

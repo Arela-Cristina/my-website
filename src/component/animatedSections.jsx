@@ -2,7 +2,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-export function AnimatedSection({ children, className, id }) {
+export function AnimatedSection({ children, className, id, style }) {
   const controls = useAnimation();
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 });
 
@@ -23,6 +23,7 @@ export function AnimatedSection({ children, className, id }) {
       variants={variants}
       className={className}
       id={id}
+      style={style}
     >
       {children}
     </motion.section>

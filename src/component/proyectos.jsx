@@ -1,4 +1,4 @@
-import { AnimatedSection } from "./component/animatedSections"
+import { AnimatedSection } from "./animatedSections"
 import { motion } from "framer-motion"  
 
 export default function Proyectos() {
@@ -22,7 +22,7 @@ export default function Proyectos() {
     return (
         <>
             {/* Proyectos */}
-            <AnimatedSection className="py-16 px-6 max-w-5xl mx-auto" id="proyectos">
+            <AnimatedSection id="proyectos">
                 <h2 className="text-3xl font-semibold mb-8">Proyectos</h2>
                 <div className="grid gap-8 md:grid-cols-2">
                     <ProjectCard

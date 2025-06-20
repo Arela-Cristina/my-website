@@ -1,4 +1,4 @@
-import { AnimatedSection } from "./component/animatedSections"
+import { AnimatedSection } from "./animatedSections"
 
 
 export default function Servicios() {
@@ -17,8 +17,8 @@ export default function Servicios() {
 
         <>
             {/* Servicios */}
-            <AnimatedSection className="bg-orange-50 py-16 px-6" id="servicios">
-                <div className="max-w-4xl mx-auto">
+            <AnimatedSection >
+                <div className="">
                     <h2 className="text-3xl font-semibold mb-8">Servicios</h2>
                     <div className="grid gap-6 md:grid-cols-2">
                         <ServiceCard title="Sitios para restaurantes" desc="Con menú, fotos, y formulario de contacto" />
