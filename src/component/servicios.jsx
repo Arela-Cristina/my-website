@@ -21,7 +21,7 @@ export default function Servicios() {
                 <div className="">
 
 
-                    <div className="flex rounded-sm"  style={{ backgroundColor: '#851851' }}>
+                    <div className="flex rounded-sm"  style={{ backgroundColor: 'rgb(250, 250, 250)' }}>
 
                         <div className="flex flex-col border-r-2 border-[#fe3f87] px-32 py-32 gap-[2rem]">
                             <h2 className="text-3xl font-semibold mb-8">Web Design</h2>
