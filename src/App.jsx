@@ -10,7 +10,7 @@ import MiExperiencia from './component/miExperiencia'
 
 export default function Portfolio() {
   return (
-    <main>
+    <main className="w-full">
       <Hero />
       <SobreMi />
       <MiExperiencia />

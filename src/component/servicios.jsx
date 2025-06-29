@@ -23,13 +23,13 @@ export default function Servicios() {
 
                     <div className="flex rounded-sm"  style={{ backgroundColor: 'rgb(250, 250, 250)' }}>
 
-                        <div className="flex flex-col border-r-2 p-24 border-[#fe3f87] gap-[2rem]">
+                        <div className="flex flex-col border-r-2  border-[#fe3f87] ">
                             <h2 className="text-3xl font-semibold mb-8">Web Design</h2>
                             <ServiceCard title="Sitios para restaurantes" desc="Con menú, fotos, y formulario de contacto" />
                             <ServiceCard title="Páginas de presentación" desc="Para cafés, peluquerías, tiendas y más" />
                         </div>
 
-                        <div className="flex flex-col border-l-2 p-24 border-[#fe3f87] gap-[2rem]">
+                        <div className="flex flex-col border-l-2  border-[#fe3f87] ">
                             <h2 className="text-3xl font-semibold mb-8">Servicios</h2>
                             <ServiceCard title="Conexión a redes" desc="Instagram, WhatsApp, Google Maps" />
                             <ServiceCard title="Soporte personalizado" desc="Acompañamiento directo y en español" />

@@ -12,46 +12,48 @@ export default function Hero() {
 
 
             {/* Hero Section */}
-            <AnimatedSection
-                className="bg-cover bg-center bg-no-repeat h-screen"
-                style={{ backgroundImage: `url(${wallpaperHero})` }} >
+            <AnimatedSection className="w-full bg-cover bg-center bg-no-repeat h-screen" style={{ backgroundImage: `url(${wallpaperHero})` }} >
 
                 {/* menu */}
-                <div className="flex justify-between mr-20 ml-20 pt-8">
+                <div className="flex justify-between text-4xl pt-8 mx-8">
+
                     <h1>My website</h1>
+
                     <button className="cursor-pointer">
                         <FontAwesomeIcon icon={faBars} />
                     </button>
+
                 </div>
 
 
                 {/* Hero */}
-                <div className="flex justify-between mr-70 ml-70 gap-[8rem]">
+                <div className="flex flex-col md:flex-row  gap-5 mt-6 mx-8 ">
 
-
-                    <div className="flex flex-col  w-1/2 pt-32">
-                        <h1 className="text-4xl font-bold">
-                            Frontend<br />Developer.
-                        </h1>
-                        <p>Hola, soy Cristina y ayudo a pequenos negocios a tener una bonita prescencia en la web, sobretodo negocios de la comunidad latina</p>
-
-                        <div className="flex gap-[4rem] mt-8">
+                    {/* Bloque 1 */}
+                    <div className="w-full flex justify-center items-center md:w-1/2  lg:justify-end bg-sky-50">
+                        <div className="w-3/5">
+                            {/* section 1 */}
                             <div>
-                                <p>Soy una profesional altamente competente, en mejora constante</p>
+                                <h1 className="text-4xl">Frontend Developer</h1>
+                                <p className="text-lg mt-5">Hola, soy Cristina y ayudo a los negocios a tener una bonita presencia en la web, sobretodo negocios de la comunidad Latina.</p>
                             </div>
-                            <div>
-                                <p>Poseo experiencia comprobada en la creacion de productos web para emprendedores</p>
+
+
+                            {/* section 2 */}
+                            <div className="flex flex-col gap-5 md:flex-row md:justify-between  text-lg mt-3">
+                                <p>Soy una profesional altamente competente en mejora constante</p>
+                                <p>Poseo experiencia comprobada en la creacion de productos web para emprendedores.</p>
                             </div>
                         </div>
                     </div>
 
 
-                    <div className="w-1/2">
-                        <img src={heroFotoCristina} alt="Cristina" />
+                    {/* Bloque 2 */}
+                    <div className="w-full md:w-1/2  bg-sky-950">
+                        <img className="w-full lg:w-3/5" src={heroFotoCristina} alt="Foto de Cristina" />
                     </div>
 
                 </div>
-
             </AnimatedSection >
 
         </>
