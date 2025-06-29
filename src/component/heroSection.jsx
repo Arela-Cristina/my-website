@@ -12,7 +12,7 @@ export default function Hero() {
 
 
             {/* Hero Section */}
-            <AnimatedSection className="w-full bg-cover bg-center bg-no-repeat h-screen" style={{ backgroundImage: `url(${wallpaperHero})` }} >
+            <AnimatedSection className="w-full h-auto  md:h-screen bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url(${wallpaperHero})` }} >
 
                 {/* menu */}
                 <div className="flex justify-between text-4xl pt-8 mx-8">
@@ -49,7 +49,7 @@ export default function Hero() {
 
 
                     {/* Bloque 2 */}
-                    <div className="w-full md:w-1/2  bg-sky-950">
+                    <div className="w-full  md:w-1/2  bg-sky-950">
                         <img className="w-full lg:w-3/5" src={heroFotoCristina} alt="Foto de Cristina" />
                     </div>
 
