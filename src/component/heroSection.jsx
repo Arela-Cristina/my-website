@@ -30,7 +30,7 @@ export default function Hero() {
                 <div className="flex flex-col md:flex-row  gap-5 mt-6 mx-8 ">
 
                     {/* Bloque 1 */}
-                    <div className="w-full flex justify-center items-center md:w-1/2  lg:justify-end bg-sky-50">
+                    <div className="w-full flex justify-center items-center pt-8 sm:pt-8  md:w-1/2 md:pt-8 lg:pt-8 xl:justify-end  bg-sky-50">
                         <div className="w-3/5">
                             {/* section 1 */}
                             <div>
@@ -49,8 +49,8 @@ export default function Hero() {
 
 
                     {/* Bloque 2 */}
-                    <div className="w-full  md:w-1/2  bg-sky-950">
-                        <img className="w-full lg:w-3/5" src={heroFotoCristina} alt="Foto de Cristina" />
+                    <div className="w-full md:w-1/2 lg:w-1/2 xl:w-1/2 xl:max-w-[600px] bg-sky-950">
+                        <img className="w-full" src={heroFotoCristina} alt="Foto de Cristina" />
                     </div>
 
                 </div>
