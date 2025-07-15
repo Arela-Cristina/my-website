@@ -5,7 +5,7 @@ import { faUserAstronaut } from '@fortawesome/free-solid-svg-icons';
 
 export default function SobreMi() {
     return (
-        <AnimatedSection className="w-full h-screen flex flex-col justify-center gap-8   md:h-screen     bg-orange-200">
+        <AnimatedSection className="w-full flex flex-col justify-center gap-8 pt-5 pb-5 md:h-screen     bg-orange-200">
 
             {/* seccion 1 */}
             <div className="flex flex-col mx-8 md:flex-row  lg:max-w-[1200px] lg:mx-auto bg-sky-100 ">
