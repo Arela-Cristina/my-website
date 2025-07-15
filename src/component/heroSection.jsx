@@ -12,10 +12,10 @@ export default function Hero() {
 
 
             {/* Hero Section */}
-            <AnimatedSection className="w-full h-auto pt-5 pb-5 md:h-screen bg-cover bg-center bg-no-repeat " style={{ backgroundImage: `url(${wallpaperHero})` }} >
+            <AnimatedSection className="w-full h-auto bg-cover bg-center bg-no-repeat pt-5 pb-5 flex flex-col  md:h-screen" style={{ backgroundImage: `url(${wallpaperHero})` }} >
 
                 {/* menu */}
-                <div className="flex justify-between text-4xl pt-8 mx-8">
+                <div className="flex justify-between text-2xl pt-8 mx-8 bg-amber-50 sm: ">
 
                     <h1>My website</h1>
 
